@@ -1,0 +1,25 @@
+-- This project contains SQL queries that analyze and retrieve insights from a fictional Superstore database. 
+-- The queries include tasks like ordering items by price, calculating statistical summaries of item prices,
+
+
+-- Orders item by price in ASC order 
+SELECT price
+FROM superstore
+ORDER BY price; 
+
+-- Shows the sum of all the items prices
+SELECT SUM(price) 
+FROM superstore;
+
+
+-- Displays prices for items that are kitchen supplies
+SELECT AVG(price) 
+FROM superstore 
+WHERE category = 'Kitchen Supplies';
+
+
+-- What the average rating is for electronics 
+
+SELECT AVG(average_rating) 
+FROM superstore 
+WHERE category = 'Electronics';
